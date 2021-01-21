@@ -48,7 +48,7 @@ import {
       "@media (max-width: 900px)": {
         fontFamily: "Roboto, sans-serif",
         fontWeight: 800,
-        paddingLeft: "20px",
+        paddingLeft: "0",
        // position:"fixed"
       },
     },
