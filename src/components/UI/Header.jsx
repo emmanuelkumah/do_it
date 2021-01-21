@@ -41,31 +41,40 @@ import {
   const useStyles = makeStyles(() => ({
     header: {
       backgroundColor: "#F8333C",
-      width: "100vw",
+      //width: "100vw",
       paddingRight: "79px",
-      paddingLeft: "118px",
+      paddingLeft: "99px",
+      // add responsiveness to header
       "@media (max-width: 900px)": {
-        paddingLeft: 0,
+        fontFamily: "Roboto, sans-serif",
+        fontWeight: 800,
+        paddingLeft: "20px",
+       // position:"fixed"
       },
     },
     logo: {
-      fontFamily: "Poppins, sans-serif",
-      fontWeight: 600,
+      fontFamily: "Hachi Maru Pop, sans-serif",
+      fontSize: "2rem",
+      fontWeight: 900,
       color: "#FFFEFE",
       textAlign: "left",
     },
     menuButton: {
-      fontFamily: "Poppins, sans-serif",
-      fontWeight: 700,
-      size: "18px",
+      color: "#fff",
+      fontFamily: "Roboto, sans-serif",
+      fontWeight: 400,
+      fontSize: "18px",
       marginLeft: "38px",
     },
     toolbar: {
-      display: "flex",
+     // display: "flex",
       justifyContent: "space-between",
     },
     drawerContainer: {
-      padding: "20px 30px",
+      fontFamily: "Roboto, sans-serif",
+      fontWeight: 800,
+      padding: "30px 30px",
+      color:"#F8333C"
     },
   }));
   
@@ -114,7 +123,7 @@ import {
           <IconButton
             {...{
               edge: "start",
-              color: "inherit",
+              color: "secondary",
               "aria-label": "menu",
               "aria-haspopup": "true",
               onClick: handleDrawerOpen,
@@ -183,7 +192,7 @@ import {
   
     return (
       <header>
-        <AppBar position="static" className={header}>
+        <AppBar position="fixed" className={header}>
           {mobileView ? displayMobile() : displayDesktop()}
         </AppBar>
       </header>
