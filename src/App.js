@@ -1,5 +1,5 @@
-import "./App.css";
 import TodoBuilder from "./container/TodoBuilder";
+// import theme from "./theme";
 
 function App() {
   return (

@@ -1,14 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+
+import reportWebVitals from "./reportWebVitals";
+
+//customizing the mui theme
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: ["Montserrat", "Roboto", "Hachi Maru Pop"].join(","),
+  },
+  palette: {
+    primary: {
+      main: "#cccccc",
+      secondary: "#333333",
+    },
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

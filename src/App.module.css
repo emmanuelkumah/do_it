@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+.heroTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: violet;
+}
