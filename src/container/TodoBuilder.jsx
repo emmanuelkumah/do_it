@@ -10,18 +10,13 @@ function TodoBuilder() {
     <Router>
       <Grid container direction='column'>
         <Grid item container>
-          {" "}
           <Header />
         </Grid>
-        <Grid item container xs={12}>
+        <Grid item>
           <Hero />
         </Grid>
-        <Grid item container>
-          <Grid item xs={0} sm={1} />
-          <Grid item xs={12} sm={10}>
-            <Features />
-          </Grid>
-          <Grid item xs={0} sm={1} />
+        <Grid item>
+          <Features />
         </Grid>
       </Grid>
     </Router>

@@ -49,7 +49,7 @@ import {
         fontFamily: "Roboto, sans-serif",
         fontWeight: 800,
         paddingLeft: "0",
-       // position:"fixed"
+      
       },
     },
     logo: {
@@ -63,11 +63,11 @@ import {
       color: "#fff",
       fontFamily: "Roboto, sans-serif",
       fontWeight: 400,
-      fontSize: "18px",
+      fontSize: "1.3rem",
       marginLeft: "38px",
     },
     toolbar: {
-     // display: "flex",
+     
       justifyContent: "space-between",
     },
     drawerContainer: {
@@ -165,13 +165,13 @@ import {
         );
       });
     };
-  
+  //define app logo  
     const appLogo = (
-      <Typography variant="h6" component="h1" className={logo}>
-        Do It!
+      <Typography variant="h1" component="h1" className={logo}>
+        do.This!
       </Typography>
     );
-  
+  // display nav items 
     const getMenuButtons = () => {
       return navigationItemsData.map(({ label, href }) => {
         return (
