@@ -4,7 +4,9 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import SendRoundedIcon from "@material-ui/icons/SendRounded";
 import Button from "@material-ui/core/Button";
-import image from "../images/BannerImg.png"
+import image from "../../static/images/BannerImg.png"
+// import FeatureImg_2 from "../../static/images/FeatureImage2.png";
+
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -42,9 +44,9 @@ const useStyles = makeStyles((theme) => ({
 function Hero() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <main className={classes.root}>
       <Grid container>
-        <Grid item md={6}>
+        <Grid item sm={6}>
           <Typography variant='h2' className={classes.heading}>
             Organize your life , your way
           </Typography>
@@ -66,13 +68,15 @@ function Hero() {
             Get Started
           </Button>
         </Grid>
-        <Grid item md={6}>
-           
-          <img className={classes.heroImg} src={image} alt="Hero" />
+        <Grid item sm={6}>
+           <div>
+           <img className={classes.heroImg} src={image} alt="Hero" />
+
+           </div>
         
         </Grid>
       </Grid>
-    </div>
+    </main>
   );
 }
 
